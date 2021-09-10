@@ -1,0 +1,49 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const router = express.Router();
+const app = express();
+// add router in express app
+app.use("/", router);
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+router.get("/", (req, res) => {
+  res.sendfile("index.html");
+});
+
+router.post("/funding", (req, res) => {
+  var name = req.body.name;
+  var cellphone = req.body.cellphone;
+  var amount = req.body.amount;
+
+  console.log(
+    "[funding] User name = " +
+      name +
+      ", cellphone is " +
+      cellphone +
+      ", amount is " +
+      amount
+  );
+  res.end("yes");
+});
+
+router.post("/reserve", (req, res) => {
+  var name = req.body.name;
+  var cellphone = req.body.cellphone;
+  var amount = req.body.amount;
+
+  console.log(
+    "[reserve] User name = " +
+      name +
+      ", cellphone is " +
+      cellphone +
+      ", amount is " +
+      amount
+  );
+  res.end("yes");
+});
+
+app.listen(80, () => {
+  console.log("Started on PORT 80");
+});
