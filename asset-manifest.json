@@ -1,0 +1,39 @@
+{
+  "files": {
+    "static/js/0.b77c6b38.chunk.js": "/joychant-phone/static/js/0.b77c6b38.chunk.js",
+    "static/js/0.b77c6b38.chunk.js.map": "/joychant-phone/static/js/0.b77c6b38.chunk.js.map",
+    "static/js/1.85c9687a.chunk.js": "/joychant-phone/static/js/1.85c9687a.chunk.js",
+    "static/js/1.85c9687a.chunk.js.map": "/joychant-phone/static/js/1.85c9687a.chunk.js.map",
+    "static/js/2.67865661.chunk.js": "/joychant-phone/static/js/2.67865661.chunk.js",
+    "static/js/2.67865661.chunk.js.map": "/joychant-phone/static/js/2.67865661.chunk.js.map",
+    "static/js/3.6379737e.chunk.js": "/joychant-phone/static/js/3.6379737e.chunk.js",
+    "static/js/3.6379737e.chunk.js.map": "/joychant-phone/static/js/3.6379737e.chunk.js.map",
+    "static/js/4.d892f0bb.chunk.js": "/joychant-phone/static/js/4.d892f0bb.chunk.js",
+    "static/js/4.d892f0bb.chunk.js.map": "/joychant-phone/static/js/4.d892f0bb.chunk.js.map",
+    "static/js/5.bd534215.chunk.js": "/joychant-phone/static/js/5.bd534215.chunk.js",
+    "static/js/5.bd534215.chunk.js.map": "/joychant-phone/static/js/5.bd534215.chunk.js.map",
+    "static/js/6.f21f575b.chunk.js": "/joychant-phone/static/js/6.f21f575b.chunk.js",
+    "static/js/6.f21f575b.chunk.js.map": "/joychant-phone/static/js/6.f21f575b.chunk.js.map",
+    "main.js": "/joychant-phone/static/js/main.58ab6477.chunk.js",
+    "main.js.map": "/joychant-phone/static/js/main.58ab6477.chunk.js.map",
+    "runtime-main.js": "/joychant-phone/static/js/runtime-main.0ecea349.js",
+    "runtime-main.js.map": "/joychant-phone/static/js/runtime-main.0ecea349.js.map",
+    "static/css/9.786ae0dd.chunk.css": "/joychant-phone/static/css/9.786ae0dd.chunk.css",
+    "static/js/9.38dfe87c.chunk.js": "/joychant-phone/static/js/9.38dfe87c.chunk.js",
+    "static/js/9.38dfe87c.chunk.js.map": "/joychant-phone/static/js/9.38dfe87c.chunk.js.map",
+    "static/js/10.40e33dec.chunk.js": "/joychant-phone/static/js/10.40e33dec.chunk.js",
+    "static/js/10.40e33dec.chunk.js.map": "/joychant-phone/static/js/10.40e33dec.chunk.js.map",
+    "static/js/11.eb97b9b4.chunk.js": "/joychant-phone/static/js/11.eb97b9b4.chunk.js",
+    "static/js/11.eb97b9b4.chunk.js.map": "/joychant-phone/static/js/11.eb97b9b4.chunk.js.map",
+    "index.html": "/joychant-phone/index.html",
+    "static/css/9.786ae0dd.chunk.css.map": "/joychant-phone/static/css/9.786ae0dd.chunk.css.map",
+    "static/js/0.b77c6b38.chunk.js.LICENSE.txt": "/joychant-phone/static/js/0.b77c6b38.chunk.js.LICENSE.txt",
+    "static/js/9.38dfe87c.chunk.js.LICENSE.txt": "/joychant-phone/static/js/9.38dfe87c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ecea349.js",
+    "static/css/9.786ae0dd.chunk.css",
+    "static/js/9.38dfe87c.chunk.js",
+    "static/js/main.58ab6477.chunk.js"
+  ]
+}
