@@ -16,9 +16,10 @@ export const useForm = (validate: any) => {
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setErrors(validate(values));
+    // setErrors(validate(values));
     // Your url for API
-    const url = "ec2-54-211-11-208.compute-1.amazonaws.com:3000/funding";
+    // const url = "ec2-54-211-11-208.compute-1.amazonaws.com:3000/funding";
+    const url = "localhost:4000/funding";
     if (Object.keys(values).length === 3) {
       axios
         .post(url, {
