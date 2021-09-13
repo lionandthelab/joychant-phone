@@ -28,8 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "aws s3 sync ./build s3://joychantphone-bucket --profile=joychantphone"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,6 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://lionandthelab.github.io/joychant-phone"
+  }
 }

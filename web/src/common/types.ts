@@ -24,6 +24,7 @@ export interface PngIconProps {
 }
 
 export interface InputProps {
+  label: string;
   name: string;
   placeholder: string;
   t: any;

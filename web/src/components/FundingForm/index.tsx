@@ -12,7 +12,7 @@ import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
-    validate
+    validate, "http://ec2-54-180-187-155.ap-northeast-2.compute.amazonaws.com:4000/funding"
   ) as any;
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
@@ -39,7 +39,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Row>
                   <Input
                     type="text"
-                    name="이름"
+                    name="name"
+                    label="이름"
                     placeholder=""
                     value={values.name || ""}
                     onChange={handleChange}
@@ -48,7 +49,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 </Row>
                 <Input
                   type="text"
-                  name="연락처"
+                  label="연락처"
+                  name="cellphone"
                   placeholder=""
                   value={values.cellphone || ""}
                   onChange={handleChange}
@@ -58,9 +60,10 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="금액"
+                  label="금액"
+                  name="money"
                   placeholder=""
-                  value={values.amount || ""}
+                  value={values.money || ""}
                   onChange={handleChange}
                 />
                 <ValidationType type="amount" />

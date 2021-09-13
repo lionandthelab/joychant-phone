@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, InputNumber } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
@@ -12,7 +12,7 @@ import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
-    validate
+    validate, "http://ec2-54-180-187-155.ap-northeast-2.compute.amazonaws.com:4000/reservation"
   ) as any;
 
   const ValidationType = ({ type }: ValidationTypeProps) => {
@@ -39,7 +39,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Row>
                   <Input
                     type="text"
-                    name="이름"
+                    label="이름"
+                    name="name"
                     placeholder=""
                     value={values.name || ""}
                     onChange={handleChange}
@@ -48,7 +49,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 </Row>
                 <Input
                   type="text"
-                  name="연락처"
+                  label="연락처"
+                  name="cellphone"
                   placeholder=""
                   value={values.cellphone || ""}
                   onChange={handleChange}
@@ -57,9 +59,10 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <Input
-                  type="text"
-                  name="예약 수량"
-                  placeholder=""
+                  type="number"
+                  label="수량"
+                  name="amount"
+                  placeholder="1"
                   value={values.amount || ""}
                   onChange={handleChange}
                 />

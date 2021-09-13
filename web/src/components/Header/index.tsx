@@ -45,15 +45,19 @@ const Header = ({ t }: any) => {
         {/* <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("사전예약")}</Span>
         </CustomNavLinkSmall> */}
-        <CustomNavLinkSmall onClick={() => history.push("/funding")}>
-          <Span>{t("펀딩하기")}</Span>
+        <CustomNavLinkSmall 
+          style={{ width: "100px" }}
+          onClick={() => history.push("/funding")}>
+          <Span>
+            <Button>{t("펀딩하기")}</Button>
+          </Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
-          style={{ width: "180px" }}
+          style={{ width: "100px" }}
           onClick={() => history.push("/")}
         >
           <Span>
-            <Button>{t("사전예약")}</Button>
+            <Button color="white">{t("사전예약")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
@@ -63,16 +67,16 @@ const Header = ({ t }: any) => {
   return (
     <HeaderSection>
       <Container>
-        <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
+        <Row justify="center">
+          {/* <LogoContainer to="/" aria-label="homepage">
             <SvgIcon src="joychantphone_simple_logo.png" width="238px" height="64px" />
-          </LogoContainer>
+          </LogoContainer> */}
           <NotHidden>
             <MenuItem />
           </NotHidden>
-          <Burger onClick={showDrawer}>
+          {/* <Burger onClick={showDrawer}>
             <Outline />
-          </Burger>
+          </Burger> */}
         </Row>
         <Drawer closable={false} visible={visible} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>

@@ -9,6 +9,11 @@ export const HeaderSection = styled("header")`
     align-items: center;
     text-align: center;
   }
+
+  // @media only screen and (max-width: 890px) {
+  //   padding: 0rem 0.0rem;
+  // }
+
 `;
 
 export const LogoContainer = styled(Link)`
@@ -33,7 +38,7 @@ export const CustomNavLink = styled("div")`
   }
 `;
 
-export const ContactWrapper = styled("div")<any>`
+export const ContactWrapper = styled("div") <any>`
   cursor: pointer;
   width: ${(p) => (p.width ? "100%" : "110px")};
   font-weight: 700;
@@ -55,7 +60,7 @@ export const Burger = styled("div")`
 `;
 
 export const NotHidden = styled("div")`
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 190px) {
     display: none;
   }
 `;
@@ -75,6 +80,10 @@ export const CustomNavLinkSmall = styled(NavLink)`
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;
   }
+
+  @media only screen and (max-width: 468px) {
+    margin: 0.25rem 0.75rem;
+  }
 `;
 
 export const Label = styled("span")`
@@ -86,7 +95,7 @@ export const Label = styled("span")`
   align-items: baseline;
 `;
 
-export const Outline = styled(MenuOutlined)<any>`
+export const Outline = styled(MenuOutlined) <any>`
   font-size: 22px;
 `;
 
