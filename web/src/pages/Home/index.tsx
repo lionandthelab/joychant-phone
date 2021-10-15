@@ -16,6 +16,41 @@ const Home = () => {
   return (
     <Container>
       {/* <ScrollToTop /> */}
+      <ContentBlock
+        type="image_left"
+        title={""}
+        content={""}
+        icon="dp1.png"
+        id="dp1"
+      />
+      <ContentBlock
+        type="image_right"
+        title={""}
+        content={""}
+        icon="dp2.png"
+        id="dp2"
+      />
+      <ContentBlock
+        type="image_left"
+        title={""}
+        content={""}
+        icon="dp3.png"
+        id="dp3"
+      />
+      <ContentBlock
+        type="image_right"
+        title={""}
+        content={""}
+        icon="dp4.png"
+        id="dp4"
+      />
+      <ContentBlock
+        type="image_left"
+        title={""}
+        content={""}
+        icon="dp5.png"
+        id="dp5"
+      />
       {/* <ContentBlock
         type="right"
         title={IntroContent.title}
@@ -29,14 +64,14 @@ const Home = () => {
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
       /> */}
-      <ContentBlock
+      {/* <ContentBlock
         type="left"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
         icon="joychantphone_intro.png"
         id="about"
-      />
+      /> */}
       {/* <ContentBlock
         type="right"
         title={MissionContent.title}

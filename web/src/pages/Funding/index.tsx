@@ -1,4 +1,5 @@
 import { lazy } from "react";
+
 import RewardContent from "../../content/RewardContent.json";
 import FundingContent from "../../content/FundingContent.json";
 import DoFundingContent from "../../content/DoFundingContent.json";
@@ -21,18 +22,39 @@ const Funding = () => {
         id="intro"
       /> */}
       <ContentBlock
-        type="image"
-        title={FundingContent.title}
-        content={FundingContent.text}
-        icon="fund.png"
-        id="product"
+        type="image_left"
+        title={""}
+        content={""}
+        icon="dp1.png"
+        id="dp1"
       />
       <ContentBlock
-        type="image"
-        title={RewardContent.title}
-        content={RewardContent.text}
-        icon="reward.png"
-        id="product"
+        type="image_right"
+        title={""}
+        content={""}
+        icon="dp2.png"
+        id="dp2"
+      />
+      <ContentBlock
+        type="image_left"
+        title={""}
+        content={""}
+        icon="dp3.png"
+        id="dp3"
+      />
+      <ContentBlock
+        type="image_right"
+        title={""}
+        content={""}
+        icon="dp4.png"
+        id="dp4"
+      />
+      <ContentBlock
+        type="image_right"
+        title={""}
+        content={""}
+        icon="dp5.png"
+        id="dp5"
       />
       <FundingForm
         title={DoFundingContent.title}

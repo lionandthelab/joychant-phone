@@ -135,12 +135,12 @@ const Footer = ({ t }: any) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                <SvgIcon
+                {/* <SvgIcon
                   src="logo.svg"
                   aria-label="homepage"
                   width="101px"
                   height="64px"
-                />
+                /> */}
               </LogoContainer>
             </NavLink>
             <FooterContainer>

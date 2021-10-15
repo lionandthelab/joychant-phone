@@ -40,4 +40,5 @@ export interface InputProps {
 export interface validateProps {
   name: string;
   cellphone: string;
+  amount: string;
 }

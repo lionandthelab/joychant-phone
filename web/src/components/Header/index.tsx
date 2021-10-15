@@ -45,7 +45,7 @@ const Header = ({ t }: any) => {
         {/* <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("사전예약")}</Span>
         </CustomNavLinkSmall> */}
-        <CustomNavLinkSmall 
+        {/* <CustomNavLinkSmall 
           style={{ width: "100px" }}
           onClick={() => history.push("/funding")}>
           <Span>
@@ -59,7 +59,7 @@ const Header = ({ t }: any) => {
           <Span>
             <Button color="white">{t("사전예약")}</Button>
           </Span>
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall> */}
       </>
     );
   };
@@ -69,7 +69,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="center">
           {/* <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="joychantphone_simple_logo.png" width="238px" height="64px" />
+            <SvgIcon src="joychantphone_simple_logo.png" width="100%" height="" />
           </LogoContainer> */}
           <NotHidden>
             <MenuItem />

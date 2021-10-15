@@ -27,7 +27,7 @@ const RightBlock = ({
   };
   return (
     <ImageBlockContainer>
-      <Fade direction="left">
+      <Fade direction="right">
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={24} md={24} sm={24} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />

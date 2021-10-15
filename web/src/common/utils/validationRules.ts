@@ -9,5 +9,8 @@ export default function validate(values: validateProps) {
   if (!values.cellphone) {
     errors.cellphone = "전화번호를 입력해주세요";
   }
+  if (!values.amount) {
+    errors.amount = "원하시는 금액을 입력해주세요";
+  }
   return errors;
 }

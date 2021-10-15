@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
+
 import axios from "axios";
 
 export const useForm = (validate: any, url: string) => {
@@ -9,14 +10,14 @@ export const useForm = (validate: any, url: string) => {
 
   const openNotificationWithIcon = () => {
     notification["success"]({
-      message: "알림",
-      description: "신청되었습니다!",
+      message: "펀딩 신청 완료",
+      description: "함께해 주셔서 감사합니다!",
     });
   };
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // setErrors(validate(values));
+    setErrors(validate(values));
     // Your url for API
     // const url = "ec2-54-211-11-208.compute-1.amazonaws.com:3000/funding";
     console.log(url)

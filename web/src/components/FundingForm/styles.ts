@@ -6,9 +6,15 @@ export const ContactContainer = styled("div")`
   @media only screen and (max-width: 1024px) {
     padding: 3rem 0;
   }
+
+  @media only screen and (max-width: 768px) {
+    padding: 1rem 2rem 0rem;
+  }
 `;
 
 export const FormGroup = styled("form")`
+  padding: 1rem 0;
+  
   width: 100%;
   max-width: 520px;
 
@@ -18,7 +24,7 @@ export const FormGroup = styled("form")`
   }
 `;
 
-export const Span = styled("span")<any>`
+export const Span = styled("span") <any>`
   display: block;
   font-weight: 600;
   color: rgb(255, 130, 92);

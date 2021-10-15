@@ -26,12 +26,12 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
 
   return (
     <ContactContainer id={id}>
-      <Row justify="space-between" align="middle">
-        <Col lg={12} md={11} sm={24} xs={24}>
+      <Row justify="center" align="middle">
+        {/* <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left">
             <Block title={title} content={content} />
           </Slide>
-        </Col>
+        </Col> */}
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right">
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
@@ -41,7 +41,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                     type="text"
                     name="name"
                     label="이름"
-                    placeholder=""
+                    placeholder="이름을 입력해주세요"
                     value={values.name || ""}
                     onChange={handleChange}
                   />
@@ -51,7 +51,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   type="text"
                   label="연락처"
                   name="cellphone"
-                  placeholder=""
+                  placeholder="전화번호를 입력해주세요"
                   value={values.cellphone || ""}
                   onChange={handleChange}
                 />
@@ -61,9 +61,9 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   label="금액"
-                  name="money"
-                  placeholder=""
-                  value={values.money || ""}
+                  name="amount"
+                  placeholder="원하시는 금액을 입력해주세요"
+                  value={values.amount || ""}
                   onChange={handleChange}
                 />
                 <ValidationType type="amount" />
